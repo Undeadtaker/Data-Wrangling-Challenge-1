@@ -1,0 +1,51 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "daily_prices",
+      "path": "daily prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Price",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "monthly_prices",
+      "path": "montly prices.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "Price",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "gas_prices",
+  "title": "prices_of_natural_gases",
+  "contributors": [
+    {
+      "title": "Filip Kasic",
+      "role": "author"
+    }
+  ]
+}
